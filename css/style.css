@@ -1,0 +1,9 @@
+#navbar{
+    float: left
+}
+@media (max-width: 900px){
+    #navbar{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
