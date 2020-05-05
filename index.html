@@ -14,17 +14,26 @@
       top: 0;
       left: 0;
       width: 40vw;
-      background-color: yellow;
     } 
+
+    #main-doc {
+      grid-column: 2;
+    }
+
+    header {
+      font-size: 20pt;
+    }
+
     @media (max-width: 900px){
       #navbar{
-        margin-bottom: 20px;
+        position: fixed;
     }
 }
   </style>
 </head>
 
 <body>
+  <div class="container">
   <nav id="navbar">
     <header>React Documentation</header>
     <a class="nav-link" href='#Try_React'>Try React</a>
@@ -33,7 +42,7 @@
     <a class="nav-link" href='#A_Stateful_Component'>A Stateful Component</a>>
     <a class="nav-link" href='#How_to_deploy'>How to deploy</a>
   </nav>
-  <h1>Hello World, we are software developers!</h1>
+
   <main id="main-doc">
     <section class="main-section" id="Try_React">
       <header>Try React</header>
@@ -121,6 +130,7 @@
       </ul>
     </section>
   </main>
+  </div>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="js/index.js"></script>
